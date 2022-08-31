@@ -1,0 +1,107 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+/*------- container------------*/
+#container{
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+}
+@media(max-width:480px){
+  #container{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media(max-width:400px){
+  #container{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media(max-width:320px){
+  #container{
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*------------parent_load-------------*/
+#container #parent_load{
+  background-color: rgba(0, 0,0,0.8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:480px){
+  #container #parent_load{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media(max-width:400px){
+  #container #parent_load{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media(max-width:320px){
+  #container #parent_load{
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*-----animation------*/
+#container #parent_load #animation{
+  width: 4%;
+  height: 50px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: royalblue transparent yellow transparent;
+  animation-name: animy;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function:linear;
+}
+@media(max-width:480px){
+  #container #parent_load #animation{
+    width: 10%;
+    height: 50px;
+  }
+}
+@media(max-width:400px){
+  #container #parent_load #animation{
+    width: 12%;
+    height: 50px;
+  }
+}
+@media(max-width:320px){
+  #container #parent_load #animation{
+    width: 15%;
+    height: 50px;
+  }
+}
+@keyframes animy{
+from{
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+to{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+}
